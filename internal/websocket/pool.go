@@ -11,7 +11,7 @@ type Pool struct {
 	Broadcast  chan Message
 }
 
-func newPool() *Pool {
+func NewPool() *Pool {
 	return &Pool{
 		Clients:    make(map[*Client]bool),
 		Register:   make(chan *Client),
